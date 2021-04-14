@@ -18,7 +18,7 @@ authors:
   qqplot:
     name: qqplot
     display_name: qqplot
-    gravatar: e56154546cf4be74e393c62d1ae9f9d4
+    avatar: 'assets/images/avatar.png'
     email: kyubyung91@gmail.com
     description: "Data Scientist"
 
