@@ -3,7 +3,7 @@ layout: post
 title:  "테이블에서 최신 일자의 데이터를 가져올 때 주의할 점"
 author: qqplot
 categories: [ DB ]
-image: assets/images/4.jpg
+image: assets/images/9.jpg
 beforetoc: "최신 일자를 가져오는 쿼리를 짤 때에는 주의해야 한다."
 toc: true
 ---
