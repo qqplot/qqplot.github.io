@@ -22,9 +22,7 @@ toc: true
 
 
 
-
-
-![image-20210922231123982](/Users/kyubyungchae/Library/Application Support/typora-user-images/image-20210922231123982.png)
+![image-20210922231833177](/Users/kyubyungchae/Downloads/image-20210922231833177.png)
 
 
 
@@ -44,7 +42,7 @@ toc: true
 
 
 
-![image-20210922231818572](/Users/kyubyungchae/Library/Application Support/typora-user-images/image-20210922231818572.png)
+![image-20210922231818572](/Users/kyubyungchae/Downloads/image-20210922231818572.png)
 
 
 
@@ -130,7 +128,9 @@ n4.left = n8
 
 
 
-![image-20210922231833177](/Users/kyubyungchae/Library/Application Support/typora-user-images/image-20210922231833177.png)
+![image-20210922231123982](/Users/kyubyungchae/Downloads/image-20210922231123982.png)
+
+
 
 
 
