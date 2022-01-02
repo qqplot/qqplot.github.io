@@ -1,15 +1,11 @@
 ---
 layout: post
-title:  "Request Pool이란"
+title:  "What is Request Pool"
 categories: [ DB ]
 tags: [ impala ]
 fullview: false
 comments: true
 ---
-
-
-
-
 
 
 
@@ -109,7 +105,7 @@ Impala는 기본적으로 지정된 메모리 제한을 초과하는 쿼리를 �
 
 ### 참고
 
-- https://docs.cloudera.com/documentation/enterprise/6/6.3/topics/impala_request_pool.html
-- https://docs.cloudera.com/documentation/enterprise/6/6.3/topics/impala_admission.html#admission_concurrency
-- https://devbox.tistory.com/entry/JSP-%EC%BB%A4%EB%84%A5%EC%85%98-%ED%92%80-1
-- https://d2.naver.com/helloworld/5102792
+- [cloudera impala request pool](https://docs.cloudera.com/documentation/enterprise/6/6.3/topics/impala_request_pool.html)
+- [cloudera admission](https://docs.cloudera.com/documentation/enterprise/6/6.3/topics/impala_admission.html#admission_concurrency)
+- [커넥션 풀](https://devbox.tistory.com/entry/JSP-%EC%BB%A4%EB%84%A5%EC%85%98-%ED%92%80-1)
+- [Commons DBCP 이해하기](https://d2.naver.com/helloworld/5102792)
