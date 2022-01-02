@@ -32,7 +32,7 @@ categories_path: categories.html
 tags_path: tags.html
 
 # set it as url of an image
-sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+sidebar_background_image: https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/ornament-3484327_1920.jpg?raw=false
 
 BASE_PATH:
 
