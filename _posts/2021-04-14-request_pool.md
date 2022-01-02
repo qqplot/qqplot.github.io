@@ -3,9 +3,7 @@ layout: post
 title:  "Request Pool이란"
 categories: [ DB ]
 tags: [ impala ]
-layout: post
-title: Hello World!
-fullview: true
+fullview: false
 comments: true
 ---
 
