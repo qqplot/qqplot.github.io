@@ -7,7 +7,7 @@ highlighter: rouge
 markdown: kramdown
 disqus: qqplot
 google_analytics: 'G-JF12SRF3ZB'
-title: 'qqplot'
+title: qqplot
 
 defaults:
   -
@@ -32,7 +32,7 @@ categories_path: categories.html
 tags_path: tags.html
 
 # set it as url of an image
-sidebar_background_image: https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/mountain-6827881_1280.jpg?raw=true
+sidebar_background_image: https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/lighthouse-5354475_1280.jpg?raw=true
 
 BASE_PATH:
 
