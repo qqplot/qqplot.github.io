@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "What is Request Pool"
-categories: [ DB ]
+categories: [ database ]
 tags: [ impala ]
 fullview: false
 comments: true

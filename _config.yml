@@ -22,7 +22,7 @@ author:
   email: kyubyung91@gmail.com
   github: qqplot
   # twitter: dbtek
-  resume: CV_kyubyung-da0fd52be931436d9f593bf0b50549c8
+  resume: da0fd52be931436d9f593bf0b50549c8
   linkedin: qqplot
   bio: Your stylish, minimalist theme!
   email_md5: 726351295ec82e145928582f595aa3aa
@@ -32,7 +32,7 @@ categories_path: categories.html
 tags_path: tags.html
 
 # set it as url of an image
-# sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
+sidebar_background_image: https://www.dropbox.com/s/g9h23zrycedxtk5/sky.png?raw=1
 
 BASE_PATH:
 
