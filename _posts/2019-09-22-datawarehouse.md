@@ -17,7 +17,7 @@ comments: true
 
 
 
-#### 데이터 창고
+### 데이터 창고
 
 데이터 웨어하우스(DataWarehouse, DW)가 필요한 이유는 데이터베이스(DB)는 분석하기에 너무 작은 단위이기 때문입니다.
 
@@ -48,7 +48,7 @@ comments: true
 
 <br/><br/>
 
-#### 데이터 웨어하우스의 목적
+### 데이터 웨어하우스의 목적
 
 자, 여기서 DW를 구축한다면 그 목적은 무엇이 될까요?
 
@@ -80,9 +80,11 @@ comments: true
 - 데이터의 정합성 - 데이터를 어디까지 변형해야 하나?
 - 쓸데없는 데이터도 모아두는 것이 옳은가? - 필요한 것만 뽑아다 놓자
 
+<br/>
 
+<br/>
 
-#### DW의 아키텍처 예시
+### DW의 아키텍처 예시
 
 ![img](https://t1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/1F9Q/image/1OvdaZx9MYLoaJ8oIx4Gr64kjAY.jpg)
 
@@ -94,7 +96,7 @@ comments: true
 
 <br/>
 
-#### 참고
+### 참고
 
 - 데이터 웨어하우스 멘토(The Data Warehouse Mentor):실용적 DW BI 시스템 구축을 위한 통찰
 - 랄프 킴벌의 데이터 웨어하우스 툴킷:DW/BI와 빅데이터 분석을 위한 다차원 모델링 완벽 가이드
