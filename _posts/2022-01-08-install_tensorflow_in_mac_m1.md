@@ -41,9 +41,9 @@ macOS 12.0+ 이상의 업그레이드가 필요하다. 아직까지는 multi-GPU
 
 ![mac_os_version.png](https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/mac_os_version.png?raw=true)
 
+<br/>
 
-
-
+<br/>
 
 
 
@@ -55,19 +55,21 @@ xcode-select --install
 
 
 
- 
+ <br/>
+
+<br/>
 
 
 
 #### STEP 2: Miniforge (Anaconda) 설치
 
-일반 Anaconda는 안되고 ARM64용 miniforge를 설치해야 한다.
+일반 Anaconda는 안되고 ARM64용 miniforge를 설치해야 한다. [링크](https://developer.apple.com/metal/tensorflow-plugin/)에서 Download를 받고 해당 명령어를 실행하도록 한다.
 
-https://developer.apple.com/metal/tensorflow-plugin/
+<br/>
 
 ![miniforge_down.png](https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/miniforge_down.png?raw=true)
 
-링크에서 Download를 받고 해당 명령어를 실행하도록 한다.
+<br/>
 
 ```sh
 chmod +x ~/Downloads/Miniforge3-MacOSX-arm64.sh
@@ -75,13 +77,15 @@ sh ~/Downloads/Miniforge3-MacOSX-arm64.sh
 source ~/miniforge3/bin/activate
 ```
 
-
+<br/>
 
 ✓ *이미 mini forge가 설치되어 있다면 제거하고 설치하자.* [링크](https://github.com/conda-forge/miniforge)
 
 생각보다 mac에서는 conda를 지우는 것이 만만치가 않다. 응용프로그램에도 없기도 하고... conda uninstall이나 clean 패키지를 설치하는 방법은 통하지 않았다. 아무래도 homebrew를 통해 설치를 해서 그런 듯 하다. 위 링크 방법대로 하니 잘 지워졌다.
 
+<br/>
 
+<br/>
 
 #### STEP 3: Conda 가상환경 생성 및 패키지 설치
 
@@ -156,7 +160,7 @@ conda install -c conda-forge pandas
 conda install -c conda-forge jupyterlab
 ```
 
-
+<br/><br/>
 
 
 
@@ -238,7 +242,7 @@ model.fit( ds_train, epochs=12, validation_data=ds_test, )
 
 ```
 
-
+<br/>
 
 코드를 돌리면 metal plugin이 정상적으로 호출되고 있음을 알 수 있다.
 
