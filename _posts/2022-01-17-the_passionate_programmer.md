@@ -44,6 +44,8 @@ by 킬릴 지브란, 예언자*
 
 
 ### 참고
+
 - [프로그래머, 열정을 말하다](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9788966260225&orderClick=LEa&Kc=)
+
 ---
 
