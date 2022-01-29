@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "직장인, 목표를 찾기 위해 방황할 때"
+title:  "파이썬으로 간단한 추첨 프로그램 만들기"
 categories: [ python ]
 tags: [ python ]
 fullview: false
 comments: true
 ---
 
-파이썬으로 간단한 추첨 프로그램 만들기 
+경품 추첨을 할 때 프로그램 만들어서 사용해보자!
 
 
 ### 파이썬으로 뽑기 프로그램 만들기
@@ -54,6 +54,8 @@ window.config(padx=10, pady=10, bg="lightgrey")
 window.geometry("550x550")
 window.resizable(True, True)
 ```
+<br/>
+<br/>
 
 `tkinter` 라이브러리는 요소를 배치하기 위한 3가지 방법을 가지고 있습니다[2].
 
@@ -128,7 +130,8 @@ result.configure(text="새로운 메시지")
 
 ![img](https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/1F9Q/image/zpzoLCaY4HR9M1x4UQbF8OfIfBE.JPG)
 
-보시다 싶이 사번, 성명, 호칭, 팀이 Feature로 있는 데이터입니다. 그래서 `matplotlib` 라이브러리를 활용하기로 했습니다. `tkinter` 라이브러리는 이미지를 표시해주는 위젯이 있기 때문에, 이미지를 그려주는 라이브러리와 연동이 가능합니다[3][4].
+<br/>
+총 4개의 열(사번, 성명, 호칭, 팀)로 되어 있는 데이터입니다. 그래서 `matplotlib` 라이브러리를 활용하기로 했습니다. `tkinter` 라이브러리는 이미지를 표시해주는 위젯이 있기 때문에, 이미지를 그려주는 라이브러리와 연동이 가능합니다[3][4].
 
 
 ```python
@@ -149,7 +152,8 @@ ax1.set_title('호칭별 생존자 수')
 
 그래픽 요소들은 이제 채워넣었습니다. 그렇다고 하면 사용자와 소통하기 위해서 함수를 만들어 기능을 붙여넣어 봅시다.
 
-프로그램이 처음 실행되면 외부 엑셀 데이터를 읽습니다. 그리고 위젯에서 활용할 변수들을 초기화합니다. 엑셀을 읽는 함수는 `pandas` 라이브러리에서 가져왔습니다. ~~가볍게 만드려고 했는데 `pandas`와 `matplotlib`를 가져오니 점점 무거워졌습니다...~~ 
+프로그램이 처음 실행되면 외부 엑셀 데이터를 읽습니다. 그리고 위젯에서 활용할 변수들을 초기화합니다. 엑셀을 읽는 함수는 `pandas` 라이브러리에서 가져왔습니다. 
+~~가볍게 만드려고 했는데 `pandas`와 `matplotlib`를 가져오니 점점 무거워졌습니다...~~ 
 
 데이터를 읽고 여러 기능이 공통으로 사용할 global 변수를 선언합니다.
 
@@ -172,13 +176,12 @@ data['num5'] = data['사번'].str.slice(start=4, stop=5)
 
 raw_data = data
 ```
-<br/>
+<br/><br/>
 
 여러 기능이 있지만 숫자뽑기 기능만 예시로 보여드리겠습니다. 
 
 숫자뽑기 버튼을 누르면 `func_pick()` 함수를 호출합니다. 호출된 함수는 `message frame`의 `Label`의 `text` 속성을 새로운 내용이 들어있는 `msg`로 바꿉니다. `msg` 변수에는 축하합니다라는 내용과 해당 인원의 데이터를 tabulate 형태로 표현해줍니다. 이는 `pandas` 데이터 프레임의 str 형태가 이쁘지 않아 사용해봤습니다.
 
-<br/>
 
 ```python
 def func_pick():
@@ -197,6 +200,8 @@ def func_pick():
     result.configure(text=msg)
 
 ```
+<br/>
+<br/>
 
 ### 프로그램 테스트하기
 
@@ -207,12 +212,16 @@ def func_pick():
 
 ![img](https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/1F9Q/image/rywGV6r4cnjTrLqTD_EmHhlJbwI.JPG)
 
+<br/>
+<br/>
 
 다섯 개의 카드를 전부 뒤집으면 축하 메시지와 함께 당첨자가 표시됩니다.
 
 
 ![img](https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/1F9Q/image/oDF9x3mlDzKWexT_5LsvqO0kkYM.JPG)
 
+<br/>
+<br/>
 
 자, 메인 기능은 완성되었습니다. 
 
@@ -221,7 +230,7 @@ def func_pick():
 ![img](https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/1F9Q/image/RuPGb8mlz0_oSddckTby9PudDxA.JPG)
 
 <br/>
-
+<br/>
 
 처음에는 1명만 나오는 걸로 했는데, 15명을 일일이 뽑기엔 행사 시간이 부족하다고 하여 급하게 추가한 기능입니다.
 
@@ -230,11 +239,14 @@ def func_pick():
 ![img](https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/1F9Q/image/OUyVEevakPdV0H5kAaS9B0bdb4I.JPG)
 
 <br/>
+<br/>
 
 예를 들어, 데이터가 6개 밖에 없는데 뽑을 인원을 10명을 입력하면 더 작은 숫자를 입력하라는 오류 메시지가 나옵니다. `tkinter` 라이브러리는 `messagebox` 위젯이 구현되어 있습니다. 
 
 이 외에도 숫자 말고 문자를 입력한다든지 여러 상황을 대비해 줍니다. 사실 이런 예외 처리가 힘들기 때문에 사용자에게 값을 입력 받는 기능을 넣는 것이 간단하기만한 작업은 아닙니다. 그래도 이건 웹 프로그램이 아니기 때문에 행사 중간에 꺼지지 않을 정도로만 처리해 둡니다.
 
+<br/>
+<br/>
 
 ### exe 실행파일 만들기
 
@@ -259,6 +271,7 @@ pyinstaller random_sample.py
 ![img](https://wikidocs.net/images/page/21952/8_7.png)
 
 <br/>
+<br/>
 
 다른 부차적인 파일은 숨기고 exe 파일만 있어도 실행되기를 바라기 때문에 다음과 같이 하나의 파일로 생성합니다.
 
@@ -267,15 +280,14 @@ pyinstaller random_sample.py
 pyinstaller -w -F random_sample.py
 ```
 <br/>
-
-
-
-
 <br/>
 
 ### 전체 코드
 
-이제 프로그램이 완성되었습니다. 아래는 전체 코드니까 필요하신 분은 가져가서 쓰시면 됩니다. 저는 무사히 연말 행사를 치렀고 나름 소소한 재미를 드렸던 것 같습니다. 애플 워치는 못 받았지만 상당히 좋은 독일제 펜을 얻게 되었습니다. :)
+이제 프로그램이 완성되었습니다. 아래는 전체 코드니까 필요하신 분은 가져가서 쓰시면 됩니다. 
+
+저는 무사히 연말 행사를 치렀고 나름 소소한 재미를 드렸던 것 같습니다. 
+그리고 애플 워치는 못 받았지만 상당히 좋은 독일제 펜을 얻게 되었습니다. :)
 
 <script src="https://gist.github.com/qqplot/0331bc9732daa23f7fc3eb65347ccda3.js"></script>
 
