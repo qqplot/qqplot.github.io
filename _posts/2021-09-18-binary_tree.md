@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "python으로 이진트리 구현하기"
+title:  "파이썬으로 이진트리 구현하기"
 categories: [ python ]
 tags: [ python ]
 fullview: false
