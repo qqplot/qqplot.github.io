@@ -83,6 +83,7 @@ return max(counts, key=counts.get)
 
 > **max(iterable, \*[, key, default])**
 > **max(arg1, arg2, \*args[, key])**
+
 > iterable 에서 가장 큰 항목이나 두 개 이상의 인자 중 가장 큰 것을 돌려줍니다.
 >
 > 하나의 위치 인자가 제공되면, 그것은 이터러블 이어야 합니다. iterable에서 가장 큰 항목을 돌려줍니다. 두 개 이상의 위치 인자가 제공되면, 위치 인자 중 가장 큰 것을 돌려줍니다.
@@ -181,6 +182,4 @@ class Solution:
 
 - [파이썬 알고리즘 인터뷰](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791189909178&orderClick=LEa&Kc=)
 - [파이썬 공식문서](https://docs.python.org/ko/3/)
-
----
 
