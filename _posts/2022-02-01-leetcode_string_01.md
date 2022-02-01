@@ -101,7 +101,7 @@ return max(counts, key=counts.get)
 <br/>
 <br/>
 
-### LeetCode 819
+### LeetCode 49
 
 문자열 배열을 입력 받아서 애너그램 단위로 그룹화 하는 문제이다.
 그룹화 하는 방법에 대해서 고민이 되었던 부분이다. `set` 객체를 활용했었는데 `dict`로 하면 훨씬 편리하다는 것을 알게되었다.
@@ -181,5 +181,6 @@ class Solution:
 
 - [파이썬 알고리즘 인터뷰](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791189909178&orderClick=LEa&Kc=)
 - [파이썬 공식문서](https://docs.python.org/ko/3/)
+
 ---
 
