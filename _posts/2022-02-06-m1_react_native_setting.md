@@ -114,8 +114,7 @@ react-native --version
 
 자 여기까지 되었다면 ios는 실행이 가능하다.
 
-
-![img](https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/ios%20%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%ED%84%B0%20%EA%B5%AC%EB%8F%99%20%ED%99%94%EB%A9%B4.png?raw=true)
+<img src="https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/ios%20%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%ED%84%B0%20%EA%B5%AC%EB%8F%99%20%ED%99%94%EB%A9%B4.png?raw=true" height=450>
 
 
 <br/>
@@ -203,7 +202,9 @@ npx react-native run-android
 - React element [링크](https://reactnativeelements.com/docs/3.4.2/getting_started)
 - React Firebase [링크](https://rnfirebase.io/)
 
-![img](https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EA%B5%AC%EB%8F%99%ED%99%94%EB%A9%B4.png?raw=true)
+
+<img src="https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EA%B5%AC%EB%8F%99%ED%99%94%EB%A9%B4.png?raw=true" width=450>
+
 
 <br/>
 
