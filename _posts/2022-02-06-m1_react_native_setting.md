@@ -115,7 +115,7 @@ react-native --version
 자 여기까지 되었다면 ios는 실행이 가능하다.
 
 
-![img](https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/ios%20%E1%84%89%E1%85%B5%E1%84%86%E1%85%B2%E1%86%AF%E1%84%85%E1%85%A6%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A5%20%E1%84%80%E1%85%AE%E1%84%83%E1%85%A9%E1%86%BC%20%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB.png?raw=true)
+![img](https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/ios%20%EC%8B%9C%EB%AE%AC%EB%A0%88%EC%9D%B4%ED%84%B0%20%EA%B5%AC%EB%8F%99%20%ED%99%94%EB%A9%B4.png?raw=true)
 
 
 <br/>
@@ -203,7 +203,7 @@ npx react-native run-android
 - React element [링크](https://reactnativeelements.com/docs/3.4.2/getting_started)
 - React Firebase [링크](https://rnfirebase.io/)
 
-![img](https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/%E1%84%8B%E1%85%A1%E1%86%AB%E1%84%83%E1%85%B3%E1%84%85%E1%85%A9%E1%84%8B%E1%85%B5%E1%84%83%E1%85%B3%20%E1%84%80%E1%85%AE%E1%84%83%E1%85%A9%E1%86%BC%E1%84%92%E1%85%AA%E1%84%86%E1%85%A7%E1%86%AB.png?raw=true)
+![img](https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/%EC%95%88%EB%93%9C%EB%A1%9C%EC%9D%B4%EB%93%9C%20%EA%B5%AC%EB%8F%99%ED%99%94%EB%A9%B4.png?raw=true)
 
 <br/>
 
