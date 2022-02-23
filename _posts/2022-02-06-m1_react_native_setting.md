@@ -23,7 +23,7 @@ AppStore 에서 검색 후 설치
 
 <br/>
 
-##### 2. Iterm2 설치하기
+#### 2. Iterm2 설치하기
 
 [링크](https://iterm2.com/)에서 Iterm2를 설치한다.
 
@@ -41,7 +41,7 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 <br/>
 
-##### 4. homebrew 설치
+#### 4. homebrew 설치
 
 mac에서 유용하게 쓰이는 프로그램들을 편리하게 설치할 수 있게 해주는 툴이다.
 
