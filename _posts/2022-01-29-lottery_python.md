@@ -2,7 +2,7 @@
 layout: post
 title:  "파이썬으로 간단한 추첨 프로그램 만들기"
 categories: [ python ]
-tags: [ python ]
+tags: [ application ]
 fullview: false
 comments: true
 ---

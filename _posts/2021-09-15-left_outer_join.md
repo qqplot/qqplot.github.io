@@ -2,7 +2,7 @@
 layout: post
 title:  "Left outer join 시 주의할 점"
 categories: [ database ]
-tags: [ impala ]
+tags: [ sql ]
 fullview: false
 comments: true
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "파이썬으로 이진트리 구현하기"
 categories: [ python ]
-tags: [ python ]
+tags: [ algorithm ]
 fullview: false
 comments: true
 ---

@@ -2,7 +2,7 @@
 layout: post
 title:  "로지스틱 회귀란"
 categories: [ datascience ]
-tags: [ algorithm ]
+tags: [ model ]
 fullview: false
 comments: true
 ---

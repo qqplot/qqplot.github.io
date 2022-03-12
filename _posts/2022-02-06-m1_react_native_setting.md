@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "M1 맥북에 React Native 프로젝트 세팅하기"
-categories: [ reactnative ]
-tags: [ reactnative, m1 ]
+categories: [ project ]
+tags: [ m1, reactnative]
 fullview: false
 comments: true
 ---

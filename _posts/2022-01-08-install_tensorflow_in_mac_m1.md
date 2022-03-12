@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "M1 Mac에서 tensorflow와 transformers 설치하기"
-categories: [ datascience, nlp ]
-tags: [ m1, tensorflow, anaconda, miniforge, huggingface, transformers ]
+categories: [ datascience ]
+tags: [ nlp, m1, tensorflow, anaconda, miniforge, huggingface, transformers ]
 fullview: false
 comments: true
 ---

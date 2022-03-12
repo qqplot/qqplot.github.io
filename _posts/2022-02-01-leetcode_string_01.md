@@ -2,7 +2,7 @@
 layout: post
 title:  "[LeetCode] 문자열 조작 (1)"
 categories: [ python ]
-tags: [ python, leetcode ]
+tags: [ leetcode ]
 fullview: false
 comments: true
 ---
