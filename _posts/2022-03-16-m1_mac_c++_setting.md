@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "M1 맥북에서 VSCode로 c++ 개발환경 세팅하기"
-categories: [ c++ ]
+categories: [ cpp ]
 tags: [ basic ]
 fullview: false
 comments: true
