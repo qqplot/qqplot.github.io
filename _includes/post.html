@@ -20,11 +20,13 @@
 	  {{ content }}
 	  </div>
 
-	<div style="text-align: center;">
-		<a href="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}/{{ page.url | remove_first: '/' | replace: '/', '-' }}" target="_blank">
-		  <img src="http://hits.dwyl.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}/{{ page.url | remove_first: '/' | replace: '/', '-' }}.svg" />
+	  <div style="text-align:right; text-align: center">
+		<a href="https://hits.seeyoufarm.com/{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}"
+		  target="_blank">
+		  <img
+		  src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://{{ site.url | remove_first: 'https://' | remove_first: 'http://' }}{{ page.url }}&count_bg=%23293786&title_bg=%23555555&icon=bilibili.svg&icon_color=%23E7E7E7&title=.&edge_flat=false"/>
 		</a>
-	</div> 
+	</div>
 	<hr>
 		{% unless page.categories == empty %}
 		<ul class="tag_box list-unstyled list-inline">
