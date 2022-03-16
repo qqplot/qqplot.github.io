@@ -14,7 +14,7 @@ unseen data로 평가해야 한다.
 
 ![img](https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/%EB%B6%80%EB%8F%99%EC%86%8C%EC%88%98%EC%A0%90.png?raw=true)
 
-
+https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.TimeSeriesSplit.html
 
 argument와 parameter 차이점
 http://taewan.kim/tip/argument_parameter/

@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "과학이란 무엇인가"
-categories: [ math ]
-tags: [ vector, linear algebra ]
+categories: [ datascience ]
+tags: [ science ]
 fullview: false
 comments: true
 ---
