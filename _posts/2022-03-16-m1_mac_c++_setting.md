@@ -89,6 +89,37 @@ c++만을 위한 익스텐션은 아니고 실행 편의성을 위해서 여러 
 이렇게까지 설정하면 터미널에서 코드가 잘 돌아갈 것이다.
 
 
+<br/>
+
+```cpp
+#include "bear.h"
+#include "mommabear.h"
+
+int main(void) {
+    Mommabear::TestBears(); // Invoke the static class fuction
+    return 0;
+}
+```
+
+그런데 위 코드처럼 직접 만든 헤더 파일을 include 하자 linker 에러가 발생했다.
+
+`clang: error: linker command failed with exit code 1 (use -v to see invocation)`
+
+위의 마지막 줄이 핵심인데, 아래 그림처럼 arm64라는 메시지가 나와서 m1 문제인가 싶어서 한참을 헤맸다. (세팅할 때마다 arm64에 하도 데이는 중이다...)
+
+![img](https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/cpp_error_linker.png?raw=true)
+
+<br/>
+
+결과적으로 문제는 컴파일과 빌드를 이해못했다는 것에 있었다. 우리가 Code Runner에게 실행하라고 한 명령어는 현재 파일만 컴파일하고 그 후 나온 실행파일을 실행하는 것이다.
+
+`cd $dir && g++ -std=c++14 $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt`
+
+그런데 같은 디렉토리에 있는 .cpp가 컴파일된 오브젝트 파일이 없으니 불러올 파일을 찾지 못했다는 linker 에러가 발생한 것이다. 그러니 같은 폴더 내의 cpp를 전부 포함해서 컴파일하면 정상적으로 실행이 된다.
+
+`cd $dir && g++ -std=c++14 *.cpp -o $fileNameWithoutExt && $dir$fileNameWithoutExt`
+
+지금과 같은 에러를 잡으면서 c++을 배우는 이유를 알게 되었다. 단순히 컴파일과 실행을 나누었을 뿐인데도 완전히 헤매고 있는 자신을 발견했기 때문이다. 컴퓨터가 어떻게 동작하는지 좀 더 이해하게 된 느낌이다. 앞으로 c++에 대해 정리해서 더 올리도록 하겠다. 그리고 Code Runner가 편하긴 하지만, 컴파일 명령어를 직접 치는 핸즈온이 필요할 듯하다. 한동안은 사용하지 말고 직접 쳐보면서 공부하겠다.
 
 
 <br/><br/>
@@ -96,3 +127,7 @@ c++만을 위한 익스텐션은 아니고 실행 편의성을 위해서 여러 
 ### 참고
 - [1] [[C++] 여러 파일을 컴파일하자.](http://csmylov.blogspot.com/2018/08/c.html)
 - [2] [[VSCode] macOS에서 Visual Studio Code로 C/C++ 코딩하기(1) - Extension 설치](https://junekkk.tistory.com/20)
+- [3] [stackoverflow - Unable to run C++ files using code runner on VS Code](https://stackoverflow.com/questions/62288990/unable-to-run-c-files-using-code-runner-on-vs-code)
+- [4] [VSCode 설정 - (3) C/C++ 빌드 및 실행 설정하기](https://huilife.tistory.com/entry/VSCode-%EC%84%A4%EC%A0%95-3-CC-%EB%B9%8C%EB%93%9C-%EB%B0%8F-%EC%8B%A4%ED%96%89-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0)
+- [5] [맥에서 VS code로 C/C++ 빌드, 실행 개발 환경설정](https://sean-ma.tistory.com/10)
+- [6] [c++ tutorial - Compilers](http://cplusplus.com/doc/tutorial/introduction/)
