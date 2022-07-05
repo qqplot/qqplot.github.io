@@ -2,7 +2,10 @@
 theme :
   name : dbyll
 ---
-{% include default.html %}
+
+{% if page.use_math %}
+	{% include mathjax_support.html %}
+{% endif %}
 
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
@@ -16,3 +19,7 @@ theme :
   ga('send', 'pageview');
 </script>
 {% endif %}
+
+
+{% include default.html %}
+
