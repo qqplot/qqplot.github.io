@@ -34,11 +34,10 @@ use_math: true
 
 위에 이야기한 3가지 특징을 만족하기 위해서 $X = x$인 사건에 대한 자기 정보(self-information)를 정의할 수 있다.
 
-$$
+
 \begin{align}
 I(x) = \log{\frac{1}{P(x)}}\, = \, -\log{P(x)}
 \end{align}
-$$
 
 여기서는 e를 로그의 밑으로 주었다(nat). 하나의 nat는 1/e 확률의 사건을 관찰함으로써 얻을 수 있는 정보량이다. 로그의 밑을 어떻게 주느냐에 따라서 단위를 다르게 설정할 수 있다. 
 
@@ -50,20 +49,23 @@ $$
 
 이산 랜덤변수 $X$의 샘플 공간이 $\lbrace x_1, x_2, \cdots, x_n\rbrace$이라고 할 때 정보 엔트로피는 아래와 같다.
 
-$$
+
+\begin{align}
 H(X) = E\left[I(X)\right] = -\sum_{i=1}^{n}P(x_i)\log_b(P(x_i))
-$$
+\end{align}
 
 예를 들어, 주사위를 던진다고 하자. 1부터 6까지 주사위 눈에 따라 각각 100원 ~ 600원을 받는다고 하자. 이 때의 기대값은 다음과 같다. 
 
-$$
+
+\begin{align}
 기대값 = \frac{1}{6}\times 100 + \frac{1}{6}\times 200 + \cdots \frac{1}{6}\times 600 =\sum_{i=1}^6 P(x_i) M(x_i)
-$$
+\end{align}
 
 여기서 $x_i$는 사건이고 그에 대해 받는 돈(100원~600원)은 $M(x_i)$라는 함수로 표현할 수 있다. 결국 기대값은 각 사건이 일어날 확률 $\times$ 사건의 합이다. 따라서 정보 엔트로피는 모든 일어날 수 있는 사건에 대한 확률 $\times$ 정보량의 합이다. 다음과 같이 계산할 수 있다.
 
-\[H(x) = \sum_{i=1}^{n}P(x_i)(-\log_b(P(x_i)))\]
-
+\begin{align}
+H(x) = \sum_{i=1}^{n}P(x_i)(-\log_b(P(x_i)))
+\end{align}
 
 # 참고
 - [1] [Deep Learning(2017), Goodfellow](https://www.deeplearningbook.org/)
