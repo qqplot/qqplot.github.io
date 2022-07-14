@@ -20,7 +20,7 @@ comments: true
 머신러닝 시스템은 너무나 자주 **개별 작업**에서 과도하게 전문화됩니다. 머신러닝은 단순히 한 작업이 아니라 여러 작업에서 좋은 성능을 나타낼 수 있습니다. 이것이 우리가 `Pathways`를 구축한 이유입니다. `Pathways`는  많은 작업을 한 번에 처리하고 새로운 작업을 빠르게 학습하며 세상에 대한 더 나은 이해를 반영하는 새로운 AI 아키텍처입니다.
 
 
-<img src="https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/img_pathways.png" width="300">
+<img src="https://github.com/qqplot/qqplot.github.io/blob/main/assets/images/img_pathways.png?raw=true" width="300">
 
 
 지난 20년간의 컴퓨터 과학 연구를 돌이켜보면, 인공지능 분야에서 놀라운 진보는 저에게 엄청난 영감을 줍니다.
