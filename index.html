@@ -1,74 +1,248 @@
----
-layout: page
-tagline:
----
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-{% for post in paginator.posts %}
-
-<article class="home">
-
-  <span class="post-date">
-    {% assign d = post.date | date: "%d" | plus:'0' %}
-    {{ post.date | date: "%B" }}
-    {% case d %}
-    {% when 1 or 21 or 31 %}{{ d }}st,
-    {% when 2 or 22 %}{{ d }}nd,
-    {% when 3 or 23 %}{{ d }}rd,
-    {% else %}{{ d }}th,
-    {% endcase %}
-    {{ post.date | date: "%Y" }}
-  </span>
-
-  <h2>
-    <a href="{{ site.BASE_PATH }}{{ post.url }}">{{ post.title }}</a>
-  </h2>
-
-  <div>
-    {% if post.fullview %}
-    {{ post.content }}
-    {% else %}
-    {% if post.shortinfo %}
-    {{ post.shortinfo }}
-    {% elsif post.description %}
-    {{ post.description }}
-    {% else %}
-    {{ post.excerpt }}
-    {% endif %}
-    {% endif %}
-  </div>
-
-</article>
-{% endfor %}
-<hr/>
-
-<ul class="pager"> 
-
-  {% if paginator.previous_page %}
-  <li class="previous">
-    {% if paginator.previous_page == 1 %}
-    <a href="{{ site.BASE_PATH }}/">&larr; Newer</a>
-    {% else %}
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.previous_page }}">&larr; Newer</a>
-    {% endif %}
-  </li>
-  {% else %}
-  <li class="previous disabled">
-    <a>&larr; Newer</a>
-  </li>
-  {% endif %}
+  <title>Kyubyung Chae</title>
   
-  <li>
-    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-  </li>
+  <meta name="author" content="Kyubyung Chae">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+</head>
 
-  {% if paginator.next_page %}
-  <li class="next">
-    <a href="{{ site.BASE_PATH }}/{{ site.paginate_path | replace: ':num', paginator.next_page }}">Older &rarr;</a>
-  </li>
-  {% else %}
-  <li class="next disabled">
-    <a>Older &rarr;</a>        
-  </li>
-  {% endif %}
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+<!--             <td style="padding:2.5%;width:63%;vertical-align:middle"> -->
+            <td style="padding:2.5%;width:90%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Kyubyung Chae</name>
+              </p>
+              <p> I am a graduate student in Data Science at <a href="https://www.snu.ac.kr/en/">Seoul National University</a>, advised by <a href="https://scholar.google.com/citations?hl=ko&user=7V7yNeoAAAAJ">Taesup Kim</a>. 
+		          I am affiliated with <a href="https://www.snu-laal.com/">LAAL</a>.
+              Prior to joining master program, I worked as a data scientist at <a href="https://www.lgcns.com/en/"> LG CNS</a>. 
+              I earned my Bachelor's degree in Department of Applied Statistics from <a href="https://devcms.yonsei.ac.kr/stat_en/index.do">YONSEI</a>.
 
-</ul>
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:kyubyung.chae@snu.ac.kr">Email</a> &nbsp/&nbsp
+                <a href="">Google Scholar</a> &nbsp/&nbsp
+                <a href="https://github.com/qqplot">Github</a> &nbsp/&nbsp
+                <a href="https://www.linkedin.com/in/qqplot/">LinkedIn</a>
+              </p>
+            </td>
+<!--             <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href=""><img style="width:100%;max-width:100%" alt="profile photo" src="" class="hoverZoomLink"></a>
+            </td> -->
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                My research interests span representation learning, and transfer learning, especially at the intersection of uncertainty (probability) and machine learning.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+	  <tr>
+	    <td style="padding:20px;width:100%;vertical-align:middle">
+	      <heading>Publications</heading>
+	    </td>
+	  </tr>
+	</tbody></table>
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		
+	  <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/LBS.png" alt="LBS" width="180" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/abs/2304.08204">
+                <papertitle>Learning Geometry-aware Representations by Sketching</papertitle>
+              </a>
+              <br>
+	      Hyundo Lee,
+              <strong>Inwoo Hwang</strong>, 
+	      Hyunsung Go,
+	      Won-Seok Choi,
+	      Kibeom Kim,
+	      Byoung-Tak Zhang.
+	      <li> <em>IEEE/CVF Conference on Computer Vision and Pattern Recognition (<strong>CVPR</strong>)</em>, 2023 </li>
+              <!-- <br> -->
+              <p>
+              <a href="https://arxiv.org/abs/2304.08204">Paper</a> / 
+	      <a href="https://github.com/illhyhl1111/LearningBySketching">Code</a>
+              </p>
+            </td>
+          </tr>
+		
+	  <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/cssi_clear.png" alt="CSSI" width="180" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://openreview.net/forum?id=-aFd28Uy9td">
+                <papertitle>On Discovery of Local Independence over Continuous Variables via Neural Contextual Decomposition</papertitle>
+              </a>
+              <br>
+              <strong>Inwoo Hwang</strong>, 
+	      <a href="https://yun-kwak.github.io">Yunhyeok Kwak</a>,
+	      Yeon-Ji Song,
+	      Byoung-Tak Zhang^,
+              <a href="https://www.sanghacklee.me">Sanghack Lee</a>^.
+	      <li> <em>Conference on Causal Learning and Reasoning (<strong>CLeaR</strong>)</em>, 2023 </li>
+              <li> <em>NeurIPS Workshop on Causal Inference Challenges in Sequential Decision Making: Bridging Theory and Practice</em>, 2021 </li>
+              <!-- <br> -->
+              <p>
+              <a href="https://openreview.net/forum?id=-aFd28Uy9td">Paper</a> / 
+	      <a href="">Code</a>
+<!--               <a href="https://sites.google.com/view/causal-sequential-decisions/home">Workshop</a> -->
+              </p>
+            </td>
+          </tr>
+		
+		
+	  <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/selecmix.jpeg" alt="SelecMix" width="180" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://openreview.net/forum?id=cIpU8OzGSCU">
+                <papertitle>SelecMix: Debiased Learning by Contradicting-pair Sampling</papertitle>
+              </a>
+              <br>
+              <strong>Inwoo Hwang</strong>, Sangjun Lee, 
+	      <a href="https://yun-kwak.github.io">Yunhyeok Kwak</a>,
+              <a href="https://coallaoh.github.io">Seong Joon Oh</a>,
+	      <a href="https://www.damienteney.info">Damien Teney</a>,
+	      <a href="http://wityworks.com">Jin-Hwa Kim</a>^,
+	      Byoung-Tak Zhang^.
+	      <li> <em>Neural Information Processing Systems (<strong>NeurIPS</strong>)</em>, 2022 &nbsp <font color="blue"><strong>(Scholar Award)</strong></font> </li>
+              <li> <em>ICML Workshop on Spurious Correlations, Invariance, and Stability</em>, 2022 </li>
+	      <p>
+	      <a href="https://arxiv.org/abs/2211.02291">Paper</a> / 
+<!--               <a href="https://openreview.net/forum?id=cIpU8OzGSCU">Openreview</a> /  -->
+              <a href="https://github.com/bluemoon010/selecmix">Code</a>
+              </p>
+            </td>
+          </tr>
+	
+	  <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/CriticalPeriod.png" alt="CriticalPeriod" width="180" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://arxiv.org/pdf/2208.04832.pdf">
+                <papertitle>On the Importance of Critical Period in Multi-stage Reinforcement Learning</papertitle>
+              </a>
+              <br>
+	      Junseok Park,
+              <strong>Inwoo Hwang</strong>,
+	      Min Whoo Lee, Hyunseok Oh, Minsu Lee, Youngki Lee, Byoung-Tak Zhang.
+              <li> <em>ICML Workshop on Complex Feedback in Online Learning</em>, 2022 </li>
+              <!-- <br> -->
+              <p>
+              <a href="https://arxiv.org/abs/2208.04832">Paper</a> / 
+              <a href="https://cfol-workshop.github.io">Workshop</a>
+              </p>
+            </td>
+          </tr>
+					
+
+	
+	  <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="images/ShapeCon.png" alt="ShapeCon" width="180" style="border-style: none">
+            </td>
+            <td width="75%" valign="middle">
+              <a href="https://openaccess.thecvf.com/content/CVPR2022W/HCIS/papers/Lee_Improving_Robustness_to_Texture_Bias_via_Shape-Focused_Augmentation_CVPRW_2022_paper.pdf">
+                <papertitle>Improving Robustness to Texture Bias via Shape-focused Augmentation</papertitle>
+              </a>
+              <br>
+              Sangjun Lee,
+	      <strong>Inwoo Hwang</strong>,
+              <a href="https://gicheonkang.com">Gi-Cheon Kang</a>,
+              Byoung-Tak Zhang.
+              <li> <em>CVPR Workshop on Human-centered Intelligent Services: Safety and Trustworthy</em>, 2022 </li>
+              <!-- <br> -->
+              <p>
+	      <a href="https://openaccess.thecvf.com/content/CVPR2022W/HCIS/papers/Lee_Improving_Robustness_to_Texture_Bias_via_Shape-Focused_Augmentation_CVPRW_2022_paper.pdf">Paper</a> / 
+              <a href="https://sites.google.com/nycu.edu.tw/hcis/home">Workshop</a>
+              </p>
+            </td>
+          </tr>
+
+	</tbody></table>
+
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Academic Services</heading>
+              <ul>
+                <li>Conference Reviewer: CVPR (2023), ICCV (2023), NeurIPS (2023)</li>
+		<li>Workshop Reviewer: ICML Workshop on Spurious Correlations, Invariance, and Stability, 2023</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody></table>
+	
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Work Experience</heading>
+              <ul>
+                <li>[CS204] Data Structure, KAIST, 2016S - 2017F</li>
+              </ul>
+            </td>
+          </tr>
+        </tbody></table>
+
+	<!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Invited Talks</heading>
+              <ul>
+                <li>KSC 2022, Top-tier conference paper session</li>
+                <li>Kakao Enterprise TechTalk </li>
+                <li>SNU AIIS Retreat, Oral presentation</li>
+                <li>NAVER TechTalk</li>		      
+              </ul>
+            </td>
+          </tr>
+        </tbody></table> -->
+	      
+	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Honors and Awards</heading>
+              <ul>
+            		<li>Minister Award, ETRI AI Competition, <a href="https://www.aitimes.kr/news/articleView.html?idxno=26315">2022</a> </li>                        
+                <li>Best Award for Java Web project, 2018</li>
+                <li>MVP in New recruits of LG, 2018</li> 	      
+              </ul>
+            </td>
+          </tr>
+        </tbody></table>
+	      
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                The source of this website is from <a href="https://jonbarron.info/">here</a>.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
